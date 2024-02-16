@@ -47,7 +47,7 @@ header ul li a:hover {
 
 /* Header Ends */
 
-/* Section Starts */
+/* Hero-Section Starts */
 
 section.hero-section {
     background-color: var(--dark-primary);
@@ -122,4 +122,45 @@ ul.social-icons {
     box-shadow: 2px 5px 5px var(--primary-hover);
 }
 /* Button Ends */
-/* Section Ends */
+
+/* Hero-Section Ends */
+
+/* About-Section Starts */
+.about-section {
+    background-color: #22282f;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    box-shadow: 2px 4px 10px var(--primary);
+}
+.about-section--desc {
+    margin-left: 80px;
+    max-width: 450px;
+}
+.about-section--desc h4 {
+    font-size: 30px;
+    font-weight: 900;
+}
+.about-section--desc h4 span {
+    color: var(--primary);
+}
+.about-section--desc ul {
+    list-style: none;
+    margin: 10px 0;
+}
+.about-section--desc li {
+    margin-bottom: 5px;
+    color: gray;
+}
+.about-section--desc li > strong {
+    color: #fff;
+}
+/* About-Section Ends */
