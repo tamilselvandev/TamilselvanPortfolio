@@ -2,6 +2,7 @@
 /* Global Variables Start */
 :root {
     --dark-primary: #1b1f24;
+    --dark-secondary: #22282f;
     --primary: #12bdff;
     --primary-hover: #0d9ad2;
     --gray: #808080;
@@ -128,7 +129,7 @@ ul.social-icons {
 
 /* About-Section Starts */
 .about-section {
-    background-color: #22282f;
+    background-color: var(--dark-secondary);
     color: #fff;
     padding: 50px;
     display: flex;
@@ -172,3 +173,51 @@ ul.social-icons {
     color: #fff;
 }
 /* About-Section Ends */
+
+/* Service Section Starts */
+.service-section {
+    background-color: var(--dark-primary);
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+.service-section-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.service-section-title span {
+    color: var(--primary);
+}
+.service-section-items {
+    display: flex;
+    justify-content: center;
+}
+.service-section-box {
+    margin-right: 30px;
+    background-color: var(--dark-secondary);
+    padding: 35px;
+    max-width: 350px;
+    text-align: left;
+    border-radius: 10px;
+}
+.service-section-box:hover {
+    box-shadow: 1px 1px 1px var(--primary-hover);
+    cursor: pointer;
+}
+.service-section-box p {
+    color: var(--gray);
+    font-size: 14px;
+    margin: 10px 0;
+}
+.service-section-box a {
+    text-decoration: none;
+    color: var(--primary);
+}
+.service-section-box a:hover {
+    color: var(--primary-hover);
+}
+.service-section-icons {
+    padding: 5px;
+}
+/* Service Section Ends */
