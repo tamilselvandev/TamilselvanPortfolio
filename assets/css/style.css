@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap");
 /* Global Variables Start */
 :root {
+    --font: "Roboto Slab", "Poppins", serif;
     --dark-primary: #1b1f24;
     --dark-secondary: #22282f;
     --primary: #12bdff;
@@ -15,7 +16,7 @@
 
 /* Global Variables End */
 body {
-    font-family: "Roboto Slab", "Poppins", serif;
+    font-family: var(--font);
 }
 /* Header Starts */
 header {
@@ -30,7 +31,7 @@ header {
 header .logo {
     color: var(--primary);
     font-weight: bolder;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 header ul {
     display: flex;
@@ -109,7 +110,7 @@ ul.social-icons {
     border: 1px solid var(--primary);
     color: var(--primary);
     border-radius: 5px;
-    font-weight: 600;
+    font-weight: bolder;
 }
 .hero-btn button {
     margin-right: 15px;
@@ -247,5 +248,29 @@ textarea {
     color: var(--gray);
     font-size: 16px;
     margin-bottom: 10px;
+    resize: none;
+    font-family: var(--font);
+}
+.contact-btn {
+    width: 200px;
+    margin: 10px 0;
+    font-weight: bolder;
 }
 /* Contact Section Ends */
+
+/* Footer Starts */
+footer {
+    background-color: var(--dark-primary);
+    color: var(--gray);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--primary-hover);
+}
+/* Footer Ends */
