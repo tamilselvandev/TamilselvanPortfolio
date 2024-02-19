@@ -4,8 +4,8 @@
     --font: "Roboto Slab", "Poppins", serif;
     --dark-primary: #1b1f24;
     --dark-secondary: #22282f;
-    --primary: #12bdff;
-    --primary-hover: #0d9ad2;
+    --primary: #89e8d7;
+    --primary-hover: #41d6bb;
     --gray: #808080;
 }
 * {
@@ -30,6 +30,10 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header .logo {
@@ -62,7 +66,7 @@ section.hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 120px 0 120px;
+    padding: 80px 120px 0 120px;
 }
 .hero-title span {
     font-weight: bolder;
@@ -292,14 +296,18 @@ footer a:hover {
     section.hero-section {
         flex-direction: column;
         padding: 30px;
+        padding-top: 200px;
     }
     /* About-Section */
     section.about-section {
         flex-direction: column;
+        padding: 40px;
     }
     .about-section--desc {
         margin-left: 0;
         margin-top: 30px;
+        width: 100%;
+        max-width: unset;
     }
     /* Service Section */
     .service-section {
